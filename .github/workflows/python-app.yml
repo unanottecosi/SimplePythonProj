@@ -23,8 +23,8 @@ jobs:
     - name: Removing previous chrome instances on runner 
       run: sudo apt purge google-chrome-stable 
     - name: Install dependencies
-      run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay
+      run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay pytest
     - name: Install xvfb
       run: sudo apt-get install xvfb
-    - name: Run Python script
-      run: python ./tests/test_Google_Search.py
+    - name: Run Python script using pytest
+      run: pytest ./tests/test_Google_Search.py
