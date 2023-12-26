@@ -24,7 +24,6 @@ jobs:
       run: sudo apt purge google-chrome-stable 
     - name: Install dependencies
       run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Install xvfb
       run: sudo apt-get install xvfb
     - name: Run Python script
