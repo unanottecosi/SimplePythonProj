@@ -26,5 +26,6 @@ jobs:
       run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay pytest
     - name: Install xvfb
       run: sudo apt-get install xvfb
-    - name: Run Python script using pytest
-      run: pytest
+    - name: Run Python script 
+      run: |
+           python ./tests/test_Google_Search.py
