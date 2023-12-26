@@ -8,7 +8,7 @@ Created on Dec 25, 2023
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-import chromedriver_autoinstall
+import chromedriver_autoinstaller
 from time import sleep
 
 #===============================================================================
@@ -17,7 +17,7 @@ from time import sleep
 # display.start()
 #===============================================================================
 
-chromedriver_autoinstall.install()  # Check if the current version of chromedriver exists
+chromedriver_autoinstaller.install()  # Check if the current version of chromedriver exists
                                     # and if it doesn't exist, download it automatically,
                                     # then add chromedriver to path
 

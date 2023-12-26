@@ -4,7 +4,7 @@ Created on Dec 26, 2023
 @author: danieldu
 '''
 from selenium import webdriver
-import chromedriver_autoinstall
+import chromedriver_autoinstaller
 from time import sleep
 #===============================================================================
 # from pyvirtualdisplay import Display
@@ -12,7 +12,7 @@ from time import sleep
 # display.start()
 #===============================================================================
 
-chromedriver_autoinstall.install()  # Check if the current version of chromedriver exists
+chromedriver_autoinstaller.install()  # Check if the current version of chromedriver exists
                                     # and if it doesn't exist, download it automatically,
                                     # then add chromedriver to path
 
