@@ -29,3 +29,4 @@ jobs:
     - name: Run Python script 
       run: |
            python ./tests/test_Google_Search.py
+           python ./tests/test_Google_Search2.py
