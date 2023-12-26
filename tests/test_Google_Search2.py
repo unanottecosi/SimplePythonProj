@@ -6,15 +6,13 @@ Created on Dec 26, 2023
 from selenium import webdriver
 import chromedriver_autoinstaller
 from time import sleep
-#===============================================================================
-# from pyvirtualdisplay import Display
-# display = Display(visible=0, size=(800, 800))  
-# display.start()
-#===============================================================================
+from pyvirtualdisplay import Display
+display = Display(visible=0, size=(800, 800))  
+display.start()
 
 chromedriver_autoinstaller.install()  # Check if the current version of chromedriver exists
-                                    # and if it doesn't exist, download it automatically,
-                                    # then add chromedriver to path
+                                      # and if it doesn't exist, download it automatically,
+                                      # then add chromedriver to path
 
 chrome_options = webdriver.ChromeOptions()    
 # Add your options as needed    
