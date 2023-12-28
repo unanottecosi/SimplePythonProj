@@ -11,10 +11,10 @@ from selenium.webdriver.common.by import By
 
 from time import sleep
 
-from Base import InitiateDriver
+#from Base import InitiateDriver
 
 
-driver = InitiateDriver.startBrowser()
+driver = ./Base/InitiateDriver.startBrowser()
 
 driver.get('https://www.google.com/')
 sleep(1)
